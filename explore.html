@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ansor.kg | Sapar</title>
+   
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href=".">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+     <header>
+        <a href="./index.html" class="brand">Sapar</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./index.html">Home</a>
+                <a href="./index.html#abaut-us">Abaut</a>
+                <a href="explore.html">Exprlore</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+     </header>
+
+     <section class="home">
+
+        <input type="radio" id="s1" name="s" checked>
+        <input type="radio" id="s2" name="s">
+        <input type="radio" id="s3" name="s">
+        <input type="radio" id="s4" name="s">
+        <input type="radio" id="s5" name="s">
+
+
+        <video class="video-slide" src="./mp.4/3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="./mp.4/1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="./mp.4/4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="./mp.4/5.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="./mp.4/6.mp4" autoplay muted loop></video>
+        
+        <div class="content">
+            <h1>Wonderful. <br> <span>Kyrgyzstan</span></h1>
+            <p>In Kyrgyzstan, the mountains touch the sky and the lakes shine like jewels. With breathtaking landscapes, ancient nomadic traditions, and warm hospitality, this land welcomes every traveler with open arms.
+               <br> Here you will discover harmony between nature and soul — endless adventures, untouched beauty, and unforgettable moments.
+            </p>
+            <a href="./index.html">Read More</a>
+        </div>
+
+        <div class="media-icons">
+            <a href="https://www.facebook.com/almaz.rahatbekov" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/almaz_rakhatbekov/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/almazrahatbekov" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+        
+        <div class="slider-navigation">
+            <label class="nav-btn" for="s1"></label>
+            <label class="nav-btn" for="s2"></label>
+            <label class="nav-btn" for="s3"></label>
+            <label class="nav-btn" for="s4"></label>
+            <label class="nav-btn" for="s5"></label>
+        </div>
+
+     </section>
+
+
+
+     <script type="text/javascript">
+       // javascript of responsive navigation menu
+       const menuBtn = document.querySelector(".menu-btn")
+       const navigation = document.querySelector(".navigation")
+
+       menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+       })
+     </script>
+
+</body>
+</html>

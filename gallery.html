@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ansor.kg | Travel</title>
+   
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+
+        .home{
+            position: relative;
+            overflow: hidden;
+        }
+
+.home .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 0;
+            object-fit: cover;
+        }
+
+        .slide-show {
+            width: 65%;
+            height: 500px;
+            overflow: hidden;
+            border: 5px solid #fff;
+        }
+
+        .mid {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .slid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .slide, img{
+            z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+        }
+
+        .slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: -250px;
+}
+
+         input[name="s"]{display:none}
+
+         #s1:checked ~ .slide-show .slids .slid:nth-of-type(1) { opacity: 1; z-index: 1; }
+         #s2:checked ~ .slide-show .slids .slid:nth-of-type(2) { opacity: 1; z-index: 1; }
+         #s3:checked ~ .slide-show .slids .slid:nth-of-type(3) { opacity: 1; z-index: 1; }
+         #s4:checked ~ .slide-show .slids .slid:nth-of-type(4) { opacity: 1; z-index: 1; }
+         #s5:checked ~ .slide-show .slids .slid:nth-of-type(5) { opacity: 1; z-index: 1; }
+         #s6:checked ~ .slide-show .slids .slid:nth-of-type(6) { opacity: 1; z-index: 1; }
+         #s7:checked ~ .slide-show .slids .slid:nth-of-type(7) { opacity: 1; z-index: 1; }
+         #s8:checked ~ .slide-show .slids .slid:nth-of-type(8) { opacity: 1; z-index: 1; }
+
+         #s1:checked ~ .slider-navigation label[for="s1"],
+         #s2:checked ~ .slider-navigation label[for="s2"],
+         #s3:checked ~ .slider-navigation label[for="s3"],
+         #s4:checked ~ .slider-navigation label[for="s4"],
+         #s5:checked ~ .slider-navigation label[for="s5"],
+         #s6:checked ~ .slider-navigation label[for="s6"],
+         #s7:checked ~ .slider-navigation label[for="s7"],
+         #s8:checked ~ .slider-navigation label[for="s8"],
+
+  
+
+.media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+
+.media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.slide-show .content{
+    position: relative;
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.slide-show .content h1{
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 55px;
+    margin-bottom: 40px;
+}
+
+.slide-show .content h1 span {
+    font-size: 0.5em;
+    font-weight: 300;
+}
+
+  @media (max-width: 530px) {
+    .home .media-icons {
+        position: relative;
+        top: 420px;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        justify-content: center;
+        margin: 20px 0;
+        flex-direction: row;
+        gap: 15px;
+        
+    }
+  }
+
+    </style>
+
+</head>
+<body>
+
+    
+     <header>
+        <a href="./index.html" class="brand">Sapar</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./index.html">Home</a>
+                <a href="./index.html#abaut-us">Abaut</a>
+                <a href="./explore.html">Exprlore</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+     </header>
+
+     <section class="home">
+
+        <video autoplay muted loop class="video-bg">
+        <source src="./mp.4/video.mp4" type="video/mp4">
+    </video>
+
+        <input type="radio" id="s1" name="s" checked>
+        <input type="radio" id="s2" name="s">
+        <input type="radio" id="s3" name="s">
+        <input type="radio" id="s4" name="s">
+        <input type="radio" id="s5" name="s">
+        <input type="radio" id="s6" name="s">
+        <input type="radio" id="s7" name="s">
+        <input type="radio" id="s8" name="s">
+       
+
+       <div class="slide-show mid">
+        <div class="content">
+            <h1>Nature's<br> <span>beauty begins with us!</span></h1>
+        </div>
+         <div class="slids">
+            <div class="slid"><img src="./image/1.jpg" alt=""></div>
+            <div class="slid"><img src="./image/2.jpg" alt=""></div>
+            <div class="slid"><img src="./image/3.jpg" alt=""></div>
+            <div class="slid"><img src="./image/4.jpg" alt=""></div>
+            <div class="slid"><img src="./image/5.jpg" alt=""></div>
+            <div class="slid"><img src="./image/6.jpg" alt=""></div>
+            <div class="slid"><img src="./image/7.jpg" alt=""></div>
+            <div class="slid"><img src="./image/8.jpg" alt=""></div>
+        </div>
+       </div>
+
+       
+
+         <div class="slider-navigation">
+            <label class="nav-btn" for="s1"></label>
+            <label class="nav-btn" for="s2"></label>
+            <label class="nav-btn" for="s3"></label>
+            <label class="nav-btn" for="s4"></label>
+            <label class="nav-btn" for="s5"></label>
+            <label class="nav-btn" for="s6"></label>
+            <label class="nav-btn" for="s7"></label>
+            <label class="nav-btn" for="s8"></label>
+        </div>
+
+        <div class="media-icons">
+             <a href="https://www.facebook.com/almaz.rahatbekov" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/almaz_rakhatbekov/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/almazrahatbekov" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    
+     </section>
+
+</body>
+</html>
